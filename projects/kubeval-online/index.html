@@ -2,14 +2,14 @@
 
 <html>
 	<head>
-    <title>Shaun Donachy</title>
+    <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <link rel="stylesheet" href="http://shaundonachy.com/assets/css/main.css" />
+    <link rel="stylesheet" href="https://shaundonachy.com/assets/css/main.css" />
     
         
-        <link rel="stylesheet" href="http://shaundonachy.com/assets/css/styles/railscasts.css">
+        <link rel="stylesheet" href="https://shaundonachy.com/assets/css/styles/railscasts.css">
     
     
     <meta name="generator" content="Hugo 0.39-DEV" />
@@ -24,33 +24,33 @@
 			<div id="header">
 
 				
-<h1><a href="http://shaundonachy.com/">Shaun Donachy</a></h1>
+<h1><a href="https://shaundonachy.com/"></a></h1>
 				
 <nav id="nav">
     <ul>
-        <li class="current"><a href="http://shaundonachy.com/">Home</a></li>
+        <li class="current"><a href="https://shaundonachy.com/">Home</a></li>
         
 		
         <li>
-            <a href="http://shaundonachy.com/#projects">Projects</a>
+            <a href="https://shaundonachy.com/#projects">Projects</a>
         </li>
         
         
         
         <li>
-            <a href="http://shaundonachy.com/blog">Blog</a>
+            <a href="https://shaundonachy.com/blog">Blog</a>
             <ul>
                 
-                <li><a href="http://shaundonachy.com/blog/static-site-with-hugo/">Static Site Generator - Hugo</a></li>
+                <li><a href="https://shaundonachy.com/blog/static-site-with-hugo/">Static Site Generator - Hugo</a></li>
                 
-                <li><a href="http://shaundonachy.com/blog/">Blogs</a></li>
+                <li><a href="https://shaundonachy.com/blog/">Blogs</a></li>
                 
             </ul>
         </li>
         
         
 		
-        <li><a href="http://shaundonachy.com/#contact">Contact</a></li>
+        <li><a href="https://shaundonachy.com/#contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -63,7 +63,7 @@
 				
 				
 <article class="box post">
-    <a href="#" class="image featured"><img src="http://shaundonachy.com/images/pic01.jpg" alt="" /></a>
+    <a href="#" class="image featured"><img src="https://shaundonachy.com/images/kubeval_online.png" alt="" /></a>
     <header>
         <h2>Kubeval Online</h2>
         
@@ -72,14 +72,51 @@
     </header>
     
 
-<h4 id="validates-kubernetes-yaml-files-online">Validates kubernetes yaml files online.</h4>
+<h3 id="validate-kubernetes-k8s-yaml-files-online">Validate Kubernetes (k8s) yaml files online.</h3>
 
-<pre><code class="language-yaml">---
-api:
+<p>This project was inspired by and based on <a href="https://github.com/garethr/kubeval">garethr&rsquo;s kubeval</a>. After attending his talk at Kubecon in December 2017 I put this together to make use of kubeval to perform validations by pasting into a web interface. Garethr&rsquo;s kubeval already has a nice CLI you can use as part of a CI/CD system, and kubevalonline supplements this tool for use during the development process.</p>
 
+<p>Given a kubernetes configuration file with an invalid value such as:</p>
+
+<pre><code class="language-json">apiVersion: v1
+kind: Service
+metadata:
+  name: redis-master
+  labels:
+    app: redis
+    tier: backend
+    role: master
+spec:
+  ports:
+    # the port that this service should serve on
+  - port: sds
+    targetPort: 6379
+  selector:
+    app: redis
+    tier: backend
+    role: master
 </code></pre>
 
-<p><img src="../../images/pic06.jpg" alt="test" /></p>
+<p>kubeval recognizes that port values should be integer type and not string type then responds with an error:</p>
+
+<pre><code class="language-json">{
+  &quot;Results&quot;: [
+    {
+      &quot;Kind&quot;: &quot;Service&quot;,
+      &quot;Success&quot;: false,
+      &quot;Errors&quot;: [
+        &quot;Invalid type. Expected: integer, given: string&quot;
+      ]
+    }
+  ]
+}
+</code></pre>
+
+<p><code>kubectl run</code> provides a <code>--dry-run</code> flag which can also be used to partially verify that a declaration is valid, but kubeval provides additional information that is valuable when debugging. A handy tool for the kubernaut!</p>
+
+<p>The source code is hosted <a href="https://github.com/donachys/kubevalonline">on github</a>. The image can be pulled <a href="https://hub.docker.com/r/donachys/kubevalonline/">from dockerhub</a>.</p>
+
+<p><a href="https://travis-ci.org/donachys/kubevalonline">Travis CI</a> and <a href="https://coveralls.io/github/donachys/kubevalonline?branch=master">coveralls</a> handle the build and code coverage.</p>
 
 </article>
 
@@ -102,13 +139,13 @@ api:
             
             <li>
                 <span class="date">Apr <strong> 7</strong></span>
-                <h3><a href="http://shaundonachy.com/blog/static-site-with-hugo/">Static Site Generator - Hugo</a></h3>
+                <h3><a href="https://shaundonachy.com/blog/static-site-with-hugo/">Static Site Generator - Hugo</a></h3>
                 <p>My experience so far with Hugo!</p>
             </li>
             
             <li>
                 <span class="date">Apr <strong> 7</strong></span>
-                <h3><a href="http://shaundonachy.com/blog/">Blogs</a></h3>
+                <h3><a href="https://shaundonachy.com/blog/">Blogs</a></h3>
                 <p></p>
             </li>
             
@@ -120,6 +157,11 @@ api:
                     <header>
                         <h2>Get in touch</h2>
                     </header>
+                    <ul class="about">
+    
+        <p>I enjoy crafting new tools and tech, games, and enriching lives. In addition to software I like to practice leatherworking.</p>
+    
+</ul>
                     <ul class="social">
     
     
@@ -137,20 +179,18 @@ api:
                     <ul class="contact">
     
     <li>
-        <h3>Address</h3>
-        <p>
-
-            
-             San Francisco, CA
-            
-
-        </p>
+        <h3>Mail</h3>
+        <p><a href="mailto:shaun@donachy.me">shaun@donachy.me</a></p>
     </li>
     
     
     <li>
-        <h3>Mail</h3>
-        <p><a href="mailto:shaun@donachy.me">shaun@donachy.me</a></p>
+        <h3>Address</h3>
+        <p>
+            
+             San Francisco, CA
+            
+        </p>
     </li>
     
     
@@ -176,16 +216,16 @@ api:
 	</div>
 
 	
-<script src="http://shaundonachy.com/assets/js/jquery.min.js"></script>
-<script src="http://shaundonachy.com/assets/js/jquery.dropotron.min.js"></script>
-<script src="http://shaundonachy.com/assets/js/skel.min.js"></script>
-<script src="http://shaundonachy.com/assets/js/skel-viewport.min.js"></script>
-<script src="http://shaundonachy.com/assets/js/util.js"></script>
+<script src="https://shaundonachy.com/assets/js/jquery.min.js"></script>
+<script src="https://shaundonachy.com/assets/js/jquery.dropotron.min.js"></script>
+<script src="https://shaundonachy.com/assets/js/skel.min.js"></script>
+<script src="https://shaundonachy.com/assets/js/skel-viewport.min.js"></script>
+<script src="https://shaundonachy.com/assets/js/util.js"></script>
 
-<script src="http://shaundonachy.com/assets/js/main.js"></script>
+<script src="https://shaundonachy.com/assets/js/main.js"></script>
 
     
-    <script src="http://shaundonachy.com/assets/js/highlight.pack.js"></script>
+    <script src="https://shaundonachy.com/assets/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
 
