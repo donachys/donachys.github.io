@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>SD</title>
     <link>https://shaundonachy.com/</link>
-    <description>Recent content on </description>
+    <description>Recent content on SD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Shaun Donachy</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shaundonachy.com/blog/static-site-with-hugo/</guid>
-      <description>Hugo makes building websites fun again. So far this has held up!</description>
+      <description>Building a website with Hugo Hugo is a static site generator written in Go (aka golang). It boasts about being super speedy and how it makes building websites fun again. So far I agree with their claims! The LiveReload feature enabled with hugo server --watch is awesome. I often don&amp;rsquo;t even need to reload the web page to see updates and the rebuilds occur on the order of 5-15 ms for this site.</description>
     </item>
     
     <item>
@@ -31,21 +31,26 @@
     </item>
     
     <item>
-      <title>Automaton Pi</title>
-      <link>https://shaundonachy.com/projects/automaton-pi/</link>
-      <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+      <title>2d-midpoint-displacement-rust</title>
+      <link>https://shaundonachy.com/projects/2d-midpoint-displacement-rust/</link>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shaundonachy.com/projects/automaton-pi/</guid>
-      <description> A raspberry pi project def automaton_pi(): pass  </description>
+      <guid>https://shaundonachy.com/projects/2d-midpoint-displacement-rust/</guid>
+      <description>Scenery image generator written in rust Another project inspired by a blog post.
+I was interested in working with Rust some more and it was an excuse to implement one of my favorite algorithms: Bresenham&amp;rsquo;s line drawing algorithm.
+You can see an example of the output above. Many of the variables are defined as constants in main.rs. Try modifying the image size or colors and generate your own scenery. 😎 The source code is hosted on github.</description>
     </item>
     
     <item>
-      <title>2d-midpoint-displacement-rust</title>
-      <link>https://shaundonachy.com/projects/2d-midpoint-displacement-rust/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Automaton Pi</title>
+      <link>https://shaundonachy.com/projects/automaton-pi/</link>
+      <pubDate>Sat, 20 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://shaundonachy.com/projects/2d-midpoint-displacement-rust/</guid>
-      <description> Scenery image generator written in rust sample codes  </description>
+      <guid>https://shaundonachy.com/projects/automaton-pi/</guid>
+      <description>.centerVid{text-align:center;}
+A raspberry pi project The Automaton Pi project was created while I was studying machine learning with my fellow hackers Mack and Ljiljana and we wanted a hands-on project to work on.
+Our idea If we can do object detection with a Raspberry Pi camera and use that same RPi to drive the vehicle, then we can create an autonomous RC car. Simple.
+The platform First, we needed to get the platform ready, and the platform was our vehicle-mounted RPi.</description>
     </item>
     
   </channel>
