@@ -27,6 +27,7 @@
         <li>
             <a href="https://shaundonachy.com/blog">Blog</a>
             <ul>
+                <li><a href="https://shaundonachy.com/blog/wolves-vs-zombies-2023/">Wolves vs Zombies</a></li>
                 <li><a href="https://shaundonachy.com/blog/glampire-baby-herder/">Glampire Baby Herder!</a></li>
                 <li><a href="https://shaundonachy.com/blog/bebops-breakout/">Bebop&#39;s Breakout!</a></li>
                 <li><a href="https://shaundonachy.com/blog/static-site-with-hugo/">Static Site Generator - Hugo</a></li>
@@ -53,20 +54,20 @@
         <p>Posted 20 Sep 2014</p>
         
     </header>
-    <!-- raw HTML omitted -->
+    <style type="text/css">.centerVid{text-align:center;}</style>
 <h3 id="a-raspberry-pi-project">A raspberry pi project</h3>
 <p>The Automaton Pi project was created while I was studying machine learning with my fellow hackers <a href="https://mackstump.com/">Mack</a> and <a href="https://github.com/zljiljana">Ljiljana</a> and we wanted a hands-on project to work on.</p>
 <h3 id="our-idea">Our idea</h3>
 <p>If we can do object detection with a Raspberry Pi camera and use that same RPi to drive the vehicle, then we can create an autonomous RC car. Simple.</p>
 <h3 id="the-platform">The platform</h3>
 <p>First, we needed to get the platform ready, and the platform was our vehicle-mounted RPi. We acquired a pulse-width modulation servo driver from <a href="https://adafruit.com">Adafruit</a>. We hacked the Helion Animus RC car and replaced its all-in-one components with an electronic speed control. The steering servo was usable from the original vehicle.</p>
-<!-- raw HTML omitted -->
+<div class="image centered"><image src="../../images/automaton_pi_pwm_controller.png"></image></div>
 <p>We succeeded in getting the python script to control the steering servo of the vehicle.</p>
-<!-- raw HTML omitted -->
+<div class="centerVid"><video src="../../mov/wheel_servo_action.m4v" controls controlsList="nodownload" preload="metadata" poster="../../mov/wheel_servo_action.png"></video></div>
 <p>It was a challenge to reverse engineer the signal protocol for the electronic speed control. With some trial and error, we were able to get the motor to accelerate nicely. Getting reverse to work correctly took a bit more to figure out. Some RC enthusiast forums came in handy for solving that one.</p>
-<!-- raw HTML omitted -->
+<div class="centerVid"><video src="../../mov/esc_motor_action.m4v" controls controlsList="nodownload" preload="metadata" poster="../../mov/esc_motor_action.png"></video></div>
 <p>Mounted everything on the vehicle and took it for a spin! Wow, it works! The RPi is powered by a portable battery 5v battery intended for phone charging. Unfortunately using the keyboard doesnt provide as fine of control as an analog joystick might&hellip;</p>
-<!-- raw HTML omitted -->
+<div class="centerVid"><video src="../../mov/driving_action.m4v" controls controlsList="nodownload" preload="metadata" poster="../../mov/driving_action.png"></video></div>
 <p>Yes, that&rsquo;s pretty much what it looks like when I try to use a mouse and keyboard to play Rocket League. Maybe better. So the next challenge was getting bluetooth to work with a (ps3) controller. Then we needed to get the signal from the joystick into python. We ended up needing to switch from the Raspbian distribution to the arch pi distribution for an upgraded version of Bluez. Bluez understood how to pair and work with the PS3 controller, and pygame was able to pick up the controller inputs! We were in business! Even with the limited range it was exhilirating to be driving my (formerly busted) RC car again, but this time with controller!</p>
 <p>Getting to this point was quite a challenge, but a great learning experience. The vehicle platform was then ready for the next phase. We need a method of capturing driver input and begin gathering training data on a task. We&rsquo;ll also need a fast way of accessing imagery from the RPi camera to perform some basic image processing. With some good luck we may yet have an automaton!</p>
 <h4 id="to-be-continued">To Be Continued&hellip;</h4>
@@ -89,6 +90,12 @@
         </header>
         
         <ul class="dates">
+            
+            <li>
+                <span class="date">Dec <strong> 4</strong></span>
+                <h3><a href="https://shaundonachy.com/blog/wolves-vs-zombies-2023/">Wolves vs Zombies</a></h3>
+                <p>Wolves vs. Zombies: Departing the Undeads</p>
+            </li>
             
             <li>
                 <span class="date">May <strong> 1</strong></span>
@@ -141,18 +148,12 @@
     
     
     <li>
-        <h3>Address</h3>
+        <h3>Location</h3>
         <p>
             
              Seattle, WA
             
         </p>
-    </li>
-    
-    
-    <li>
-        <h3>Mail</h3>
-        <p><a href="mailto:shaun@donachy.me">shaun@donachy.me</a></p>
     </li>
     
     

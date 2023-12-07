@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Shaun Donachy</copyright>
-    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shaundonachy.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shaundonachy.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wolves vs Zombies</title>
+      <link>https://shaundonachy.com/blog/wolves-vs-zombies-2023/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shaundonachy.com/blog/wolves-vs-zombies-2023/</guid>
+      <description>Departing the Undeads Wolves vs. Zombies is a shoot&amp;rsquo;em&amp;rsquo;up (shmup) where the player must pilot their aircraft and guide their fellow villagers to safety. The autogyro-style aircraft fires forward giving the player a way to remove undead obstacles and rescue the villagers from a frightful fate.
+Project goals There were a few overlapping priorities for developing this game. The first priority was reaching something resembling a completed game. This goal is about learning and practice and differentiates the game from the prototype and gamejam projects I have developed previously.</description>
+    </item>
+    
     <item>
       <title>Dragenvoy - 2023</title>
       <link>https://shaundonachy.com/projects/dragenvoy-ld-26-remix-2023/</link>
